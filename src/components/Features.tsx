@@ -1,34 +1,35 @@
 import { Card } from "@/components/ui/card";
+import { Zap, Palette, Code, Smartphone, Globe, Shield } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: "⚡",
+      icon: Zap,
       title: "Lightning Fast",
       description: "Hugo generates static sites in milliseconds. Your visitors get instant page loads and perfect SEO scores."
     },
     {
-      icon: "🎨",
+      icon: Palette,
       title: "Beautiful Themes",
       description: "Choose from hundreds of professionally designed themes or create your own with our intuitive theme builder."
     },
     {
-      icon: "🔧",
+      icon: Code,
       title: "Developer Friendly",
       description: "Full Git integration, CI/CD workflows, and all the developer tools you need for professional sites."
     },
     {
-      icon: "📱",
+      icon: Smartphone,
       title: "Mobile First",
       description: "Every site is automatically optimized for mobile devices with responsive design out of the box."
     },
     {
-      icon: "🌍",
+      icon: Globe,
       title: "Global CDN",
       description: "Your sites are deployed globally with edge caching for the fastest possible load times worldwide."
     },
     {
-      icon: "🔒",
+      icon: Shield,
       title: "Secure by Default",
       description: "Static sites have zero attack surface. Built-in SSL, security headers, and best practices included."
     }
@@ -49,8 +50,8 @@ const Features = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <Card key={index} className="p-6 bg-gradient-card border-border hover:shadow-glow transition-smooth group">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-smooth">
-                {feature.icon}
+              <div className="text-primary mb-4 group-hover:scale-110 transition-smooth">
+                <feature.icon size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">
                 {feature.title}
