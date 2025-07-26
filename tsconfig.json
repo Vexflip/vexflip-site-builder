@@ -5,7 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "https://vexflip.github.io/vexflip-site-builder/",
     "paths": {
       "@/*": ["./src/*"]
     },
